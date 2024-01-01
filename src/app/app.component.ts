@@ -47,14 +47,14 @@ export class AppComponent {
     }
     return this.contatos.filter(contato => {
       // Compara nomes sem acentuações
-      return this.removerAcentos(contato.nome).toLowerCase().includes(this.filtroPorTexto.toLowerCase())
+      return this.removerAcentos(contato.nome).toLowerCase().includes(this.removerAcentos(this.filtroPorTexto).toLowerCase());
     })
   }
 
-  filtrarContatosPorLetraInicial(letra:string) : Contato [] {
+  filtrarContatosPorLetraInicial(letra:string) : Contato[] {
     return this.filtrarContatosPorTexto().filter(contato => {
-      // compara a letra inicial sem considerar acentuações
-      return this.removerAcentos(contato.nome).toLowerCase().startsWith(letra)
+      // Compara a letra inicial sem considerar acentuações
+      return this.removerAcentos(contato.nome).toLowerCase().startsWith(this.removerAcentos(letra).toLowerCase());
     })
   }
 }
