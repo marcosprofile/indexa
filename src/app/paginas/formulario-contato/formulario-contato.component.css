@@ -111,7 +111,6 @@ input:focus, textarea:focus {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 23px;
   margin: 8px 0 12px;
   line-height: 37px;
   padding: 0 12px;
@@ -142,7 +141,7 @@ input:focus, textarea:focus {
 }
 
 .botao-cancelar {
-  color:#0D6EFD;
+  color: #0D6EFD;
   background-color: #FFFFFF;
   border: 1px solid #0D6EFD;
   cursor: pointer;
@@ -150,18 +149,51 @@ input:focus, textarea:focus {
 }
 
 .botao-salvar {
-  color:#FFFFFF;
+  color: #FFFFFF;
   background-color: #0D6EFD;
   cursor: pointer;
 }
 
 .botao-desabilitado {
   background-color: #ADB5BD;
-  cursor:not-allowed;
+  cursor: not-allowed;
+}
+
+.obrigatorio {
+  opacity: .3;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .mensagem-erro {
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
   color: red;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.voltar {
+  display: flex;
+  justify-content: start;
+}
+
+.voltar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  padding: 6px, 12px;
+  color: #0D6EFD;
+  border: unset;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.voltar img {
+  width: 18px;
+  height: 18px;
 }
