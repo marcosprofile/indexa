@@ -9,18 +9,13 @@ import { FormsModule } from '@angular/forms';
 import { FormularioContatoComponent } from '../formulario-contato/formulario-contato.component';
 import { RouterLink } from '@angular/router';
 import { ContatoService } from '../../services/contato.service';
-
-interface Contato {
-  id: number
-  nome: string
-  telefone: string
-}
+import { Contato } from './../../components/contato/contato';
 
 @Component({
   selector: 'app-lista-contatos',
   standalone: true,
   imports: [
-    CommonModule,
+  CommonModule,
     ContainerComponent,
     CabecalhoComponent,
     SeparadorComponent,

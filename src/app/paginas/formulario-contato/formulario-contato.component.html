@@ -82,7 +82,7 @@
     ></textarea>
 
     <section class="botoes">
-      <button class="botao-cancelar" type="button" [routerLink]="['/lista-contatos']" routerLinkActive="router-link-active">Cancelar</button>
+      <button class="botao-cancelar" type="button" (click)="cancelar()">Cancelar</button>
       <button
         [disabled]="contatoForm.invalid"
         [ngClass]="contatoForm.invalid ? 'botao-desabilitado' : 'botao-salvar'"
