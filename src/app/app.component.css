@@ -13,6 +13,6 @@ input::placeholder {
 }
 
 input:focus {
-  border: 1px solid #0D6EFD;
-  outline: 1px solid #0D6EFD;
+  border: 1px solid #0D6EFD60;
+  outline: 1px solid #0D6EFD60;
 }
