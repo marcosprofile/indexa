@@ -10,7 +10,7 @@
 .cabecalho .titulo {
   color: #0D6EFD;
   text-align: center;
-  font-family: 'Zen Dots';
+  font-family: 'Zen Dots', sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -22,6 +22,4 @@
   color: #FD9843;
 }
 
-.banner {
-}
-
+.banner {}
