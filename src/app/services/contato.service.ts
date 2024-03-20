@@ -18,10 +18,11 @@ export class ContatoService {
   constructor() {
     //Obter contatos do localStorage
     const contatosLocalStorageString = localStorage.getItem('contatos');
-    const contatosLocalStorage =
-      contatosLocalStorageString ? JSON.parse(contatosLocalStorageString) : null;
+    const contatosLocalStorage = contatosLocalStorageString ? JSON.parse(contatosLocalStorageString) : null;
 
-    this.contatos = contatosLocalStorage || null;
+    if (contatosLocalStorage) {
+      this.contatos = contatosLocalStorage;
+    }
 
     //Salvar contatos no localStorage
     localStorage.setItem('contatos', JSON.stringify(this.contatos));
