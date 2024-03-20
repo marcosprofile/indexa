@@ -44,3 +44,9 @@ input:focus {
   height: 20px;
   padding-right: 8px;
 }
+
+@media (max-width: 768px) {
+  .adicionar-contato button {
+    width: 100%;
+  }
+}

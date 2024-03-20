@@ -12,3 +12,11 @@ section {
   box-sizing: border-box;
   margin: 80px auto;
 }
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    max-width: unset;
+    padding: 1.5rem;
+  }
+}

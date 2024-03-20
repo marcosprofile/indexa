@@ -197,3 +197,16 @@ input:focus, textarea:focus {
   width: 18px;
   height: 18px;
 }
+
+@media (max-width: 768px) {
+  .botoes {
+    width: 100%;
+    gap: 8px;
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+  }
+
+  .botao-cancelar, .botao-salvar, .botao-desabilitado {
+    width: 100%;
+  }
+}
