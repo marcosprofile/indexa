@@ -22,4 +22,8 @@
   color: #FD9843;
 }
 
-.banner {}
+@media (max-width: 768px) {
+  .banner {
+    width: 100%;
+  }
+}
