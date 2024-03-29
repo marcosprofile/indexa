@@ -22,6 +22,27 @@
   color: #FD9843;
 }
 
+.voltar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  padding: 6px, 12px;
+  color: #0D6EFD;
+  border: unset;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.voltar img {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 768px) {
   .banner {
     width: 100%;
