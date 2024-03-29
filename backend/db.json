@@ -1,0 +1,22 @@
+{
+  "contatos": [
+    {
+      "nome": "Kyo Kusanagi",
+      "telefone": "11 998765432",
+      "email": "kyo@teste.com",
+      "aniversario": "01/06/1992",
+      "redes": "",
+      "observacoes": "",
+      "id": 1
+    },
+    {
+      "nome": "Robert Garcia",
+      "telefone": "11 998765432",
+      "email": "robert@teste.com",
+      "aniversario": "01/07/1990",
+      "redes": "",
+      "observacoes": "",
+      "id": 2
+    }
+  ]
+}
