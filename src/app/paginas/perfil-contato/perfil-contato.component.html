@@ -46,10 +46,10 @@
         <i class="material-icons">notes</i>
         <strong>Observações</strong>
       </li>
-      <li>{{ contato.redes }}</li>
+      <li>{{ contato.observacoes }}</li>
     </ul>
     <div class="botoes">
-      <button class="botao-excluir">
+      <button class="botao-excluir" (click)="excluir()">
         Excluir contato
       </button>
       <button class="botao-editar">
