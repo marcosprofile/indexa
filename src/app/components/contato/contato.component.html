@@ -1,5 +1,11 @@
 <section class="contato">
   <ul>
+    <img
+      [src]="avatar"
+      alt="Avatar do contato"
+      class="avatar"
+      [routerLink]="['/perfil-contato', id]"
+    >
     <li class="nome">
       <strong>{{ nome }}</strong>
     </li>
