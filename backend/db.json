@@ -19,13 +19,22 @@
       "id": 2
     },
     {
-      "nome": "Marcos Ferreira",
+      "nome": "Marcos Laurindo Ferreira",
       "telefone": "11954375410",
       "email": "marcos@teste.com",
       "aniversario": "",
       "redes": "",
       "observacoes": "",
       "id": 3
+    },
+    {
+      "nome": "Angular 17",
+      "telefone": "11968778890",
+      "email": "angular@dev.com",
+      "aniversario": "2000-01-20",
+      "redes": "angular.dev",
+      "observacoes": "Angular 17 *2024",
+      "id": 4
     }
   ]
 }

@@ -13,6 +13,10 @@ export const routes: Routes = [
     component: FormularioContatoComponent
   },
   {
+    path: 'formulario/:id',
+    component: FormularioContatoComponent
+  },
+  {
     path: '',
     redirectTo: 'lista-contatos',
     pathMatch: 'full'

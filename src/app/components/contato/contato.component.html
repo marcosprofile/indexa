@@ -5,10 +5,10 @@
     </li>
     <li>{{ telefone }}</li>
     <li>
-      <button [routerLink]="['/perfil-contato', id]">
+      <button [routerLink]="['/formulario', id]">
         <img src="/assets/pencil-square.png" alt="editar">
       </button>
-      <button>
+      <button [routerLink]="['/perfil-contato', id]">
         <img src="/assets/trash.png" alt="remover">
       </button>
     </li>
