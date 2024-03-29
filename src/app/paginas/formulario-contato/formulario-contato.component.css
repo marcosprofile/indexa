@@ -165,13 +165,6 @@ input:focus, textarea:focus {
   font-size: 14px;
 }
 
-.mensagem-erro {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: red;
-  margin-bottom: 24px;
-}
-
 .voltar {
   display: flex;
   justify-content: start;

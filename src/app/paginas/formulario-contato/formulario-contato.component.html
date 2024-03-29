@@ -41,9 +41,7 @@
       placeholder="Digite o nome do contato"
       formControlName="nome"
     />
-    @if (contatoForm.get('nome')?.errors && contatoForm.get('nome')?.touched) {
-      <div class="mensagem-erro">Campo requerido</div>
-    }
+    <app-mensagem-erro [control]="obterControle('nome')" />
 
     <label for="telefone">Número <span class="obrigatorio">(*)</span></label>
     <input
@@ -52,9 +50,7 @@
       placeholder="Digite o número do telefone"
       formControlName="telefone"
     />
-    @if (contatoForm.get('telefone')?.errors && contatoForm.get('telefone')?.touched) {
-      <div class="mensagem-erro">Campo requerido</div>
-    }
+    <app-mensagem-erro [control]="obterControle('telefone')" />
 
     <label for="email">E-mail <span class="obrigatorio">(*)</span></label>
     <input
@@ -63,12 +59,7 @@
       placeholder="Insira o endereço de e-mail do contato"
       formControlName="email"
     />
-    @if (contatoForm.get('email')?.errors?.['required'] && contatoForm.get('email')?.touched) {
-      <div class="mensagem-erro">Campo requerido</div>
-    }
-    @if (contatoForm.get('email')?.errors?.['email'] && contatoForm.get('email')?.touched) {
-      <div class="mensagem-erro">Formato de e-mail inválido</div>
-    }
+    <app-mensagem-erro [control]="obterControle('email')" />
 
     <app-separador />
     <br>
