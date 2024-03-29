@@ -10,6 +10,7 @@ import { FormularioContatoComponent } from '../formulario-contato/formulario-con
 import { RouterLink } from '@angular/router';
 import { ContatoService } from '../../services/contato.service';
 import { Contato } from './../../components/contato/contato';
+import { PerfilContatoComponent } from '../perfil-contato/perfil-contato.component';
 
 @Component({
   selector: 'app-lista-contatos',
@@ -22,7 +23,8 @@ import { Contato } from './../../components/contato/contato';
     ContatoComponent,
     FormsModule,
     FormularioContatoComponent,
-    RouterLink
+    RouterLink,
+    PerfilContatoComponent
   ],
   templateUrl: './lista-contatos.component.html',
   styleUrl: './lista-contatos.component.css'
